@@ -26,4 +26,5 @@ Route::group(['middleware' => 'auth:sanctum'], function () {
     Route::apiResource('v1/users', UserController::class);
 });
 
+
 Route::post('v1/login', [LoginController::class, 'index']);
